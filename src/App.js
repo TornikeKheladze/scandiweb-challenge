@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import React, { Component } from "react";
+import { getCurrencies, getProductsByCategory, getCategories } from "./API";
+import { BrowserRouter } from "react-router-dom";
+class App extends Component {
+  componentDidMount() {
+    // getCurrencies
+    //   .then((res) => res.json())
+    //   .then((res) => {
+    //     console.log(res);
+    //   });
+    // getCategories()
+    //   .then((x) => x.json())
+    //   .then((x) => console.log(x));
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    getProductsByCategory("all")
+      .then((x) => x.json())
+      .then((x) => console.log(x));
+  }
+  render() {
+    return (
+      <BrowserRouter>
+        <div className="App"></div>
+      </BrowserRouter>
+    );
+  }
 }
 
 export default App;

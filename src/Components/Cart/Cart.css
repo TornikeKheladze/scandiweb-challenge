@@ -1,0 +1,64 @@
+.Cart {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.Cart-item {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 150px;
+  margin-left: 150px;
+}
+.Cart-rightSideofCart {
+  display: flex;
+  gap: 20px;
+}
+img {
+  width: 150px;
+}
+.Cart-attributes {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.Cart-atts {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.Cart-atts div {
+  display: flex;
+  gap: 10px;
+}
+.Cart-atts div span {
+  border: 1px solid black;
+}
+.Cart-addOrRemove {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.Cart-addOrRemove button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  font-weight: 500;
+  font-size: 25px;
+}
+.Cart-taxTotal {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-self: center;
+}
+.Cart-taxTotal .Cart-check {
+  width: 200px;
+  height: 50px;
+  border: none;
+  font-size: 20px;
+  background-color: #5ece7b;
+  color: white;
+}

@@ -1,0 +1,77 @@
+.PDP {
+  display: flex;
+  gap: 50px;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+.PDP .photos img {
+  cursor: pointer;
+  width: 100px;
+  transition-duration: 0.4s;
+}
+.PDP .photos img:hover {
+  box-shadow: 0px 2px 5px 5px rgba(46, 46, 209, 0.62);
+  -webkit-box-shadow: 0px 2px 5px 5px rgba(46, 46, 209, 0.62);
+  -moz-box-shadow: 0px 2px 5px 5px rgba(46, 46, 209, 0.62);
+}
+.photos {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.displayed {
+  width: 300px;
+  height: 100%;
+}
+
+.attributes {
+  display: flex;
+  gap: 5px;
+}
+.attributes button {
+  transition-duration: 0.2s;
+}
+.attributes button:hover {
+  box-shadow: 0px 0px 5px 2px rgba(0, 163, 255, 1);
+  -webkit-box-shadow: 0px 0px 5px 2px rgba(0, 163, 255, 1);
+  -moz-box-shadow: 0px 0px 5px 2px rgba(0, 163, 255, 1);
+}
+
+.info {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  gap: 20px;
+}
+
+.info button {
+  font-weight: bold;
+  font-size: 12px;
+  width: 50px;
+  height: 40px;
+}
+
+.info .PDP-addToCart {
+  background-color: rgba(94, 206, 123, 1);
+  color: white;
+  font-weight: 600;
+  border: none;
+  align-self: center;
+  width: 290px;
+  height: 50px;
+}
+button:disabled {
+  cursor: not-allowed;
+}
+
+.info h3 p {
+  display: flex;
+  gap: 8px;
+}
+.PDP .PDP-addToCart:hover {
+  background-color: rgb(73, 160, 96);
+}
+.PDP .PDP-addToCart:active {
+  background-color: rgb(22, 83, 39);
+}

@@ -1,0 +1,52 @@
+.Nav {
+  margin-bottom: 20px;
+}
+.Nav nav {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+.Nav-catButtons {
+  display: flex;
+  gap: 5px;
+}
+.Nav-category {
+  border: none;
+  width: 65px;
+  background-color: white;
+  font-weight: 400;
+  font-size: 18px;
+  height: 50px;
+}
+nav a svg {
+  background-color: rgba(82, 214, 122, 1);
+  margin-top: 5px;
+  padding: 2px;
+  height: 30px;
+  width: 30px;
+}
+.MiniCart-btn {
+  width: 60px;
+  height: 30px;
+  position: relative;
+  border: none;
+  background-color: white;
+}
+.MiniCart-btn svg {
+  width: 30px;
+  height: 20px;
+}
+.totalAmount {
+  position: absolute;
+  width: 15px;
+  top: 0;
+  right: 10px;
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+}
+#currencies {
+  font-size: 15px;
+  border: none;
+}

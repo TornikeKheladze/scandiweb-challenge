@@ -1,0 +1,11 @@
+.ProductListPage {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10%;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.ProductListPage img {
+  width: 100%;
+}

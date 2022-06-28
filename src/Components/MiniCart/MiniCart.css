@@ -1,0 +1,78 @@
+.MiniCart {
+  background-color: white;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 150;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  max-height: 500px;
+  width: 450px;
+  overflow-y: scroll;
+}
+.item {
+  display: flex;
+  justify-content: center;
+}
+.MiniCart-img {
+  width: 150px;
+}
+
+.Minicart-attributes {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.Minicart-atts div {
+  display: flex;
+  margin-top: 5px;
+  gap: 5px;
+}
+.Minicart-atts span {
+  border: 1px solid black;
+}
+
+.addOrRemove {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.addOrRemove button {
+  width: 25px;
+  height: 25px;
+  border: 1px solid black;
+}
+.bag-checkout {
+  display: flex;
+  justify-content: space-between;
+}
+.bag-checkout button {
+  width: 170px;
+  height: 50px;
+  font-size: 20px;
+}
+.bag-checkout .check {
+  border: none;
+  background-color: #5ece7b;
+  color: white;
+}
+
+.itemInfo {
+  align-self: flex-start;
+  flex-grow: 1;
+}
+
+.rightSideofMinicart {
+  display: flex;
+  gap: 10px;
+}
+.totalMoney {
+  text-align: right;
+}
+.totalMoney span {
+  margin-right: 5px;
+}

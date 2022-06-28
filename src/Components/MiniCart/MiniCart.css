@@ -1,3 +1,7 @@
+#empty {
+  width: 250px;
+  overflow: auto;
+}
 .MiniCart {
   background-color: white;
   padding: 15px;

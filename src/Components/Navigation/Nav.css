@@ -25,6 +25,8 @@ nav a svg {
   padding: 2px;
   height: 30px;
   width: 30px;
+  transform: rotate(90deg);
+  color: white;
 }
 .MiniCart-btn {
   width: 60px;

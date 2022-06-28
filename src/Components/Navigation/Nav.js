@@ -3,6 +3,7 @@ import { getCategories } from "../../API";
 import "./Nav.css";
 import { FaShoppingCart } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { RiArrowGoBackLine } from "react-icons/ri";
 
 class Nav extends Component {
   state = { categories: [] };
@@ -37,8 +38,9 @@ class Nav extends Component {
             })}
           </div>
           <Link to="/">
-            <svg src="arrow.png"></svg>
+            <RiArrowGoBackLine />
           </Link>
+
           <div>
             <div style={{ display: "inline-block" }}>
               <select

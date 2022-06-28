@@ -12,7 +12,11 @@ class MiniCart extends Component {
             show={this.props.showMiniCart}
             click={this.props.onBackdropClick}
           />
-          <h1 className="MiniCart">Bag is Empty</h1>
+          <div id="emptyBag">
+            <h2 className="MiniCart" id="empty">
+              Bag is Empty
+            </h2>
+          </div>
         </>
       );
     }

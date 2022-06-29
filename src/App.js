@@ -1,4 +1,3 @@
-import "./App.css";
 import React, { Component } from "react";
 import { getCurrencies, getProductsByCategory, getSingleProduct } from "./API";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
@@ -7,6 +6,7 @@ import ProductListPage from "./Components/ProductList/ProductListPage";
 import PDP from "./Components/PDP/PDP";
 import Cart from "./Components/Cart/Cart";
 import MiniCart from "./Components/MiniCart/MiniCart";
+import "./App.css";
 class App extends Component {
   state = {
     currentCategoryName: "all",
@@ -137,16 +137,17 @@ class App extends Component {
       });
       total += cur.amount * x.itemAmount;
     });
-
     return total.toFixed(2);
   };
-
-  render() {
+  amount = () => {
     let amount = 0;
     this.state.cart.forEach((x) => {
       amount += x.itemAmount;
     });
+    return amount;
+  };
 
+  render() {
     return (
       <BrowserRouter>
         <div className="App">
@@ -156,7 +157,7 @@ class App extends Component {
             currenciesClicked={this.onCurrenciClick}
             currencies={this.state.currencies}
             onMiniCartCLicked={this.onMiniCartCLicked}
-            amount={amount}
+            amount={this.amount()}
           />
           {this.state.showMiniCart ? (
             <MiniCart
@@ -205,7 +206,7 @@ class App extends Component {
               path="/cart"
               element={
                 <Cart
-                  amount={amount}
+                  amount={this.amount()}
                   onViewBagClick={this.onViewBagClick}
                   cartData={this.state.cart}
                   showMiniCart={this.state.showMiniCart}

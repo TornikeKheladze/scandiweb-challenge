@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import "./Product.css";
 import { Link } from "react-router-dom";
 import { FaShoppingCart } from "react-icons/fa";
+import "./Product.css";
 
 class Product extends Component {
   state = { showCartButton: false };

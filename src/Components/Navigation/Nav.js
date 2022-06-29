@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { getCategories } from "../../API";
+import { Link } from "react-router-dom";
 import "./Nav.css";
 import { FaShoppingCart } from "react-icons/fa";
-import { Link } from "react-router-dom";
 import { RiArrowGoBackLine } from "react-icons/ri";
 
 class Nav extends Component {
